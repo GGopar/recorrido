@@ -1,0 +1,46 @@
+.paralax{/* Declaración de clase */
+	position: relative;/* Posición en la que se va a colocar */
+	width: 100%;/* ancho */
+	height: 100vh;/* Alto */
+	overflow: hidden;/* Como va estar flotando */
+	display: flex;/* Lugar donde se dirigirá la imagen */
+	justify-content: center;/* Justificación del contenido */
+	align-items: center;/* Alineación del contenido */
+}
+.paralax::before{/* Clase con herencia */
+	content:'';/* Contenido */
+	position: absolute;/* Posición en la que se va a colocar */
+	bottom: 0; /* Margen */
+	width: 100%;/* Ancho */
+	height: 100px;/* Alto */
+	background: linear-gradient(to top, #0a2a43, transparent);/* Fondo degradado */
+	z-index: 10000; /* Mandarlo hasta el final */
+}
+.paralax::after{/* Clase con herencia */
+	content: '' ;/* Contenido */
+	position: absolute;/* Posición en la que se va a colocar */
+	left: 0;/* Contenido */
+	width: 100%;/* ancho */
+	height: 100%;/* Alto */
+	background: #0a2a43;
+	z-index: 10000;/* Mandarlo hasta el final */
+	mix-blend-mode: color;/* Color que se tomará */
+}
+.paralax img{/* Clase con un elemento */
+	position: absolute;/* Posición en la que se va a colocar */
+	top: 0;/* Arriba */
+	left: 0;/* Izquierda */
+	width: 100%;/* ancho */
+	height: 100%;/* Alto */
+	object-fit: cover;/* Lugar del objto */
+	pointer-events: none;/* Eventos con el punto */
+}
+#texto{/* Declaración de un ID */
+	position: relative;/* Posición en la que se va a colocar */
+	color: aqua;/* Color de la letra */
+	font-size: 10vw;/* Tamaño del texto */
+	z-index: 1;/* Posición en donde se va a mardar */
+}
+#texto{/* Declaración de un ID */
+	z-index: 2;/* Posición en donde se va a mardar */
+}
